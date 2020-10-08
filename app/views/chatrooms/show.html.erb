@@ -1,0 +1,19 @@
+<h1>Chatroom: <%= @chatroom.name %></h1>
+
+<ol>
+<% @chatroom.messags.each do |messag| %>
+  <li> <%= messag.content %></li>
+<% end %>
+</ol>
+
+<%= form_with(model: [ @chatroom, @chatroom.messags.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_field :content %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+
