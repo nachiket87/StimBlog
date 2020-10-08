@@ -1,24 +1,9 @@
-# README
+### HOW MANY BLOGS ARE YOU GONNA MAKE?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello,
 
-Things you may want to cover:
+This isn't a blog although it is just named that way.
 
-* Ruby version
+It is my personal playground to play with Stimulus Reflex. 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I love Rails and Ruby, React is fun but maybe Stim Ref might be better?
