@@ -12,8 +12,44 @@
     <%= form.text_field :content %>
   </p>
   <p>
-    <%= form.submit 'Send Message', class:'btn btn-primary' %>
+    <%= form.submit 'Send Message', class:'btn btn-primary' %> <--this will be a post request
   </p>
 <% end %>
 
+
+<hr>
+<div data-controller="hello">
+  <input data-target="hello.name" type="text">
+  <button data-action="click->hello#greet">Greet</button>
+  <span data-target="hello.output">
+  </span>
+</div>
+<hr>
+<div data-controller="nachiket">
+  <input data-target="nachiket.maits" type="text" data-action="change->nachiket#greet" type="text">
+  <span data-target="nachiket.output">
+  </span>
+</div>
+
+<hr>
+<p>
+<div data-controller="slideshow" data-slideshow-index="0">
+  <button data-action="click->slideshow#previous" class="btn btb-primary"> ← </button>
+  <button data-action="click->slideshow#next" class="btn btb-primary"> → </button>
+
+  <h1>
+    <div data-target="slideshow.slide" class="slide">🐵</div>
+    <div data-target="slideshow.slide" class="slide">🙈</div>
+    <div data-target="slideshow.slide" class="slide">🙉</div>
+    <div data-target="slideshow.slide" class="slide">🙊</div>
+  </h1>
+
+</div>
+</p>
+</hr>
+<hr>
+<h1> Below is the entire homepage coming through stimulusjs</h1>
+<hr>
+<div data-controller="content-loader" data-content-loader-url="/chatrooms">
+</div>
 
